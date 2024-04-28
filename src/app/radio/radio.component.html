@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<input type="search" placeholder="write the radio name" #search [(ngModel)]="searchValue">
+<button (click)="searchRadioStation()">search</button>
+
+<ul>
+  @if(radioListFiltered.length > 0){
+  @for(station of radioListFiltered ; track $index){
+    <li><a [href]="station.url" target="_blank">{{station.name}} </a></li>
+  }}
+</ul>
