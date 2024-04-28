@@ -3,7 +3,7 @@ name: Angular CI
 on: [push, pull_request]
 
 jobs:
-  build:
+  testing_angular:
     runs-on: ubuntu-latest
 
     strategy:
